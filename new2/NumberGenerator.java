@@ -2,11 +2,11 @@ import java.util.Random;
    
 public class NumberGenerator
 {
-    public int nextInt()
+    public static void main(String[] args)
     {
-        int randNumber = new Random(generator.nextInt(6));
-        randNumber = (randNumber + 1);
-        System.out.println(randNumber);
+        Random randNumber = new Random();
+        int randNum = (randNumber.nextInt(6) + 1);
+        System.out.println(randNum);
     }
 }
         
